@@ -83,7 +83,7 @@ const TODO_List = () => {
           <br />
           <input
             type="text"
-            placeholder="Enter Your Name"
+            placeholder="Enter Your Task"
             onChange={itemEvent}
             value={setitem}
           ></input>
