@@ -38,12 +38,12 @@ const TODO_List = () => {
       setEditData(null);
     } else {
       newSetData((oldData) => {
+        console.log(oldData);
         const allData = {
           id: new Date().getTime().toString(),
           name: setitem,
         };
-        console.log(allData.id);
-        // console.log(allData.name);
+
         return [...oldData, allData];
       });
       setNewItem("");
@@ -83,7 +83,11 @@ const TODO_List = () => {
           <br />
           <input
             type="text"
+<<<<<<< HEAD
             placeholder="Enter Your Task"
+=======
+            placeholder="Enter Your Task "
+>>>>>>> my first update
             onChange={itemEvent}
             value={setitem}
           ></input>
